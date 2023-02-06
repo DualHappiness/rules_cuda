@@ -70,7 +70,6 @@ def _cuda_library_impl(ctx):
         user_link_flags = common.host_link_flags,
         alwayslink = attr.alwayslink,
         linking_contexts = common.transitive_linking_contexts,
-        disallow_dynamic_library = True,
     )
 
     lib = None
